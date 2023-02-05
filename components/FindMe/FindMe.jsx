@@ -4,7 +4,7 @@ import { HiArrowDown } from 'react-icons/hi';
 
 export const FindMe = () => {
     return (
-        <footer className="text-center p-4">
+        <footer className="text-center">
             <section
                 name="contact"
                 data-scroll-section
@@ -23,3 +23,6 @@ export const FindMe = () => {
         </footer>
     )
 }
+
+// NeueBit, "NeueBit fallback", monospace;
+

@@ -11,12 +11,11 @@ const AboutMe = () => {
             <p className="text-600 my-4 text-center">
                 Experienced {' '}
                 <span style={{ color: '#673ab7', fontWeight: 'bold' }}>
-                    {/* Style will be inherited from the parent element */}
                     <Typewriter
                         words={['Software Engineer', 'Frontend Developer']}
-                        loop={false}
+                        loop={1}
                         cursor
-                        cursorStyle='🚀'
+                        cursorStyle=' '
                         cursorBlinking={true}
                         typeSpeed={70}
                         deleteSpeed={50}
@@ -26,7 +25,6 @@ const AboutMe = () => {
                     />
                     {" "}
                 </span>
-                with 1+ year experience.
             </p>
             <Socials />
             <div className="flex justify-center gap-4 flex-wrap my-4  items-center">

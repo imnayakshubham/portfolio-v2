@@ -50,28 +50,28 @@ const NavBar = () => {
             className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${isMobileView ? 'p-6 md:p-0 block backdrop-blur-md' : 'hidden'}`}
           >
             <ul className="h-screen md:h-auto items-center justify-center md:flex align-middle">
-              <li className="text-xl py-2 md:px-6 md:border-b-0  hover:underline md:hover:bg-transparent cursor-pointer">
+              <li className="text-xl py-2 md:px-6 md:border-b-0  hover:underline md:hover:bg-transparent cursor-pointer max-w-fit">
                 <Link href="#about" onClick={() => setIsMobileView(false)}>
                   About
                 </Link>
               </li>
-              <li className={`text-xl py-2 md:px-6  md:border-b-0  hover:underline md:hover:bg-transparent cursor-pointer`}>
+              <li className={`text-xl py-2 md:px-6  md:border-b-0  hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
                 <Link href="#skills" onClick={() => setIsMobileView(false)}>
                   Skills
                 </Link>
               </li>
-              <li className={`text-xl py-2 md:px-6  md:border-b-0 hover:underline md:hover:bg-transparent cursor-pointer`}>
+              <li className={`text-xl py-2 md:px-6  md:border-b-0 hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
                 <Link href="#projects" onClick={() => setIsMobileView(false)}>
                   Projects
                 </Link>
               </li>
-              <li className={`text-xl py-2 md:px-6  md:border-b-0  hover:underline md:hover:bg-transparent cursor-pointer`}>
+              <li className={`text-xl py-2 md:px-6  md:border-b-0  hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
                 <Link href="#contact" onClick={() => setIsMobileView(false)}>
                   Contact
                 </Link>
               </li>
               {(!isMobileView) &&
-                <li className={`text-xl py-2 md:px-6  md:border-b-0 hover:underline md:hover:bg-transparent cursor-pointer`}>
+                <li className={`text-xl py-2 md:px-6  md:border-b-0 hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
                   <DarkModeToggler />
                 </li>
               }

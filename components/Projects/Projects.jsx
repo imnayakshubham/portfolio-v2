@@ -20,10 +20,9 @@ export const Projects = () => {
                         Projects
                     </p>
                 </div>
-
                 <div className="w-full mt-10 mb-5 flex gap-5 flex-col projects__container">
-                    {ProjectList.map(({ name, desc, demo_link, code_link, url, frontend_code, backend_code }, key) => (
-                        <Project name={name} backend_code={backend_code} frontend_code={frontend_code} code_link={code_link} desc={desc} demo_link={demo_link} key={key} url={url} />
+                    {ProjectList.map((data, key) => (
+                        <Project projectData={data} key={key} />
 
                     ))}
                 </div>
