@@ -32,9 +32,13 @@ export const Project = ({ projectData }) => {
                                     </button>
                                 </>
                         }
-                        <button className={`bg-transparent hover:bg-indigo-500 transition-colors duration-200 ease-linear font-semibol py-2 px-4 border hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
-                            <Link href={demo_link ?? ""} target="_blank" rel="noopener noreferrer">Demo</Link>
-                        </button>
+                        {
+                            demo_link ?
+                                <button className={`bg-transparent hover:bg-indigo-500 transition-colors duration-200 ease-linear font-semibol py-2 px-4 border hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
+                                    <Link href={demo_link ?? "#"} target="_blank" rel="noopener noreferrer">Demo</Link>
+                                </button>
+                                : null
+                        }
                     </div>
                 </div>
             </div>

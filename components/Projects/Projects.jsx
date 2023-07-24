@@ -12,7 +12,7 @@ export const Projects = () => {
 
         <section
             name="projects"
-            className="p-8 snap-start"
+            className="p-7 snap-start"
         >
             <div className="max-w-screen-2xl mx-auto flex flex-col justify-center w-full h-full">
                 <div>
@@ -23,7 +23,6 @@ export const Projects = () => {
                 <div className="w-full mt-10 mb-5 flex gap-5 flex-col projects__container">
                     {ProjectList.map((data, key) => (
                         <Project projectData={data} key={key} />
-
                     ))}
                 </div>
             </div>

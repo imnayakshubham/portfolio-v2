@@ -9,7 +9,6 @@ const AboutMe = () => {
                 {"Nayak Shubham"}
             </h1>
             <p className="text-600 text-center">
-                Experienced {' '}
                 <span style={{ color: '#673ab7', fontWeight: 'bold' }}>
                     <Typewriter
                         words={['Software Engineer', 'Frontend Developer']}

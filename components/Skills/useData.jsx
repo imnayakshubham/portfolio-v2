@@ -84,17 +84,17 @@ export const Data = () => {
 
   const ProjectList = [
     {
-      url: "https://bit.ly/3MihNOy",
+      url: "https://images.unsplash.com/photo-1604933762023-7213af7ff7a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       name: "Blog App",
       desc: "Blog App is a web-app to post, update, delete and like blogs.",
       tech_stack_used: ["React", "Ant Design(UI library)", "Redux Saga", "Nodejs", "Expressjs", "MongoDB"],
       code_link: null,
       frontend_code: "https://github.com/imnayakshubham/blog-app-frontend",
       backend_code: "https://github.com/imnayakshubham/blog-app-backend",
-      demo_link: "blog-app-backend-chi.vercel.app",
+      demo_link: "blog-app-frontend-one.vercel.app",
     },
     {
-      url: "https://bit.ly/37Aga03",
+      url: "https://images.unsplash.com/photo-1600783245891-f275a1575d93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bm90ZXMlMjBhcHB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       name: "Notes App",
       tech_stack_used: ["React", "Ant Design(UI library)", "Redux", "Nodejs", "Expressjs", "MongoDB"],
       desc: "Notes App is MERN Stack web app that allow user to Create a note Delete a note and Edit a note.",
