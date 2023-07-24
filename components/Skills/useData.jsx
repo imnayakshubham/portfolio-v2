@@ -91,7 +91,7 @@ export const Data = () => {
       code_link: null,
       frontend_code: "https://github.com/imnayakshubham/blog-app-frontend",
       backend_code: "https://github.com/imnayakshubham/blog-app-backend",
-      demo_link: "blog-app-frontend-one.vercel.app",
+      demo_link: "https://blog-app-frontend-one.vercel.app/",
     },
     {
       url: "https://images.unsplash.com/photo-1600783245891-f275a1575d93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bm90ZXMlMjBhcHB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
