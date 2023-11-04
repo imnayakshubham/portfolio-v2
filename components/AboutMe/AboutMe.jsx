@@ -11,16 +11,16 @@ const AboutMe = () => {
             <p className="text-600 text-center">
                 <span style={{ color: '#673ab7', fontWeight: 'bold' }}>
                     <Typewriter
-                        words={['Software Engineer', 'Frontend Developer']}
+                        words={['A Software Engineer', " ", 'A Frontend Developer']}
                         loop={1}
                         cursor
-                        cursorStyle=' '
+                        cursorStyle={<span style={{ opacity: 0 }}>{"..."}</span>}
                         cursorBlinking={true}
-                        typeSpeed={70}
+                        typeSpeed={50}
                         deleteSpeed={50}
                         delaySpeed={1000}
                     />
-                    {" "}
+                    {"  "}
                 </span>
             </p>
             <div className="flex justify-center gap-2 flex-wrap items-center">
