@@ -11,7 +11,7 @@ export const Skills = () => {
     return (
         <section
             name="skills"
-            className="snap-start sm:p-4 p-7"
+            className="snap-start p-7"
         >
             <div className="max-w-screen-2xl mx-auto flex flex-col justify-center w-full h-full">
                 <div>
