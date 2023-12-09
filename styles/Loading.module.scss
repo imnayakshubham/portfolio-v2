@@ -1,0 +1,61 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.fade-in.delayed {
+    animation-delay: 2s;
+}
+
+
+.loader__container {
+    position: relative;
+}
+
+.logo__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: color-burn;
+    width: 100%;
+    padding: 0.25rem;
+
+}
+
+.loader {
+    width: 7.5rem;
+    height: 7.5rem;
+    border: 1px solid #eee;
+    border-top: 1px solid #363b3e;
+    border-radius: 100%;
+    animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}
