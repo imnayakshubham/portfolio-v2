@@ -8,9 +8,9 @@ export const SkillsV2 = () => {
     const currentTheme = theme === 'system' ? systemTheme : theme;
     return (
         <div className='w-full h-screen p-5'>
-            <div className='flex gap-10 flex-col justify-center align-middle'>
+            <div className='flex gap-5 flex-col justify-center align-middle'>
                 <div>
-                    <p className="text-4xl font-bold border-b-4 border-gray-500 inline">
+                    <p className="text-3vw text-4xl font-bold border-b-4 border-gray-500 inline">
                         Skills
                     </p>
                 </div>

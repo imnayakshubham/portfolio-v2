@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 export const AboutMeV2 = () => {
     return (
-        <div className="h-screen py-20 my-5 w-full">
-            <div className='flex justify-evenly items-center flex-col gap-4 w-full h-full'>
+        <div className="my-10 w-full" style={{ height: `calc(100vh - 50px)` }}>
+            <div className='flex justify-around items-center flex-col gap-4 w-full h-full'>
                 <div className='about__me__links sm:w-11/12 border-4 border-b-0'>
                     <div>
                         <Link rel="noopener noreferrer" target="_blank" href={"https://www.linkedin.com/in/imnayakshubham"}>

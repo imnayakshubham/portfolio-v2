@@ -9,9 +9,10 @@ export const Loading = () => {
             <div className={styles["loader__container"]}>
                 <div className={styles['loader']}>
                 </div>
-                <Image src={logo} alt='Logo' className={styles['logo__image']} />
             </div>
-            <h2 class={styles["fade-in"]}>Welcome</h2>
+            <h2 className={styles["banner__title"]}>Hi there</h2>
+            <h3 className={styles["banner__sub__title"]}>Welcome</h3>
+
         </section>
 
     )

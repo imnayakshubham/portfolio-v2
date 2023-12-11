@@ -22,17 +22,14 @@ export default function Home() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setMounted(true);
-    }, 1000);
+    }, 2000);
 
-    // return () => timeout && clearTimeout(timeout)
+    return () => timeout && clearTimeout(timeout)
   }, []);
+  const currentTheme = theme === 'system' ? systemTheme : theme;
 
-  // if (typeof window !== 'undefined') {
-  //   return <p>Loading feed...</p>
-  // }
 
   if (!mounted) return <Loading />;
-  const currentTheme = theme === 'system' ? systemTheme : theme;
   return (
     <>
       <Suspense fallback={<Loading />}>

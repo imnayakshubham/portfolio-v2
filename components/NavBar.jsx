@@ -25,7 +25,7 @@ const NavBar = () => {
             <Link href="/">
               <h2 className="text-2xl font-bold">
                 <Typewriter
-                  words={['Hi there 👋', 'Hello 👋', 'Nayak Shubham']}
+                  words={['Hello 👋', "Hola 👋", 'Nayak Shubham']}
                   loop={1}
                   cursor
                   cursorStyle={cursorStyle}
@@ -36,6 +36,7 @@ const NavBar = () => {
                 />
               </h2>
             </Link>
+            <div class="changing-text text-4xl font-bold"></div>
             {/* HAMBURGER BUTTON FOR MOBILE */}
             <div className="md:hidden flex gap-3 items-center">
               <DarkModeToggler />
@@ -49,36 +50,36 @@ const NavBar = () => {
           className={`flex justify-center pb-3 md:block md:pb-0 md:mt-0 ${isMobileView ? 'md:p-0 block backdrop-blur-md h-screen' : 'hidden'}`}
         >
           <ul className={`h-full md:h-auto items-center justify-between md:flex align-middle max-h-[80%] ${isMobileView ? 'flex flex-col justify-evenly' : null}`}>
-            {isMobileView ?
-              <>
-                <li className="text-xl py-2 md:px-6 md:border-b-0  hover:underline md:hover:bg-transparent cursor-pointer max-w-fit">
-                  <Link href="#about" onClick={() => setIsMobileView(false)}>
-                    About
-                  </Link>
-                </li>
-                <li className={`text-xl py-2 md:px-6  md:border-b-0  hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
-                  <Link href="#skills" onClick={() => setIsMobileView(false)}>
-                    Skills
-                  </Link>
-                </li>
-                <li className={`text-xl py-2 md:px-6  md:border-b-0 hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
-                  <Link href="#projects" onClick={() => setIsMobileView(false)}>
-                    Projects
-                  </Link>
-                </li>
-                <li className={`text-xl py-2 md:px-6  md:border-b-0  hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
-                  <Link href="#contact" onClick={() => setIsMobileView(false)}>
-                    Contact
-                  </Link>
-                </li>
-              </>
-              :
+            {/* {isMobileView ? */}
+            <>
+              <li className="text-xl py-2 md:px-2 md:border-b-0  hover:underline md:hover:bg-transparent cursor-pointer max-w-fit">
+                <Link href="#about" onClick={() => setIsMobileView(false)}>
+                  About
+                </Link>
+              </li>
+              <li className={`text-xl py-2 md:px-2  md:border-b-0  hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
+                <Link href="#skills" onClick={() => setIsMobileView(false)}>
+                  Skills
+                </Link>
+              </li>
+              <li className={`text-xl py-2 md:px-2  md:border-b-0 hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
+                <Link href="#projects" onClick={() => setIsMobileView(false)}>
+                  Projects
+                </Link>
+              </li>
+              <li className={`text-xl py-2 md:px-2  md:border-b-0  hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
+                <Link href="#contact" onClick={() => setIsMobileView(false)}>
+                  Contact
+                </Link>
+              </li>
+            </>
+            {/* :
               <li className={`text-xl py-2  md:border-b-0 hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
                 <Socials />
-              </li>
-            }
+              </li> */}
+            {/* } */}
             {(!isMobileView) &&
-              <li className={`text-xl py-2 md:px-6  md:border-b-0 hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
+              <li className={`text-xl py-2 md:px-2  md:border-b-0 hover:underline md:hover:bg-transparent cursor-pointer max-w-fit`}>
                 <DarkModeToggler />
               </li>
             }
