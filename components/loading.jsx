@@ -4,7 +4,7 @@ import styles from "../styles/Loading.module.scss"
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from '../utils/animation';
 
-const words = ["Hello", "नमस्ते", "Bonjour", "Ciao", "Olà", "やあ", "Hallå", "Guten tag", "Hallo"]
+const words = ["नमस्ते", "Hello", "Guten tag", "Hallo", "Bonjour", "Ciao", "Olà", "やあ", "Hallå"]
 
 
 export const Loading = () => {
@@ -19,7 +19,7 @@ export const Loading = () => {
         if (index == words.length - 1) return;
         setTimeout(() => {
             setIndex(index + 1)
-        }, index == 0 ? 1500 : 150)
+        }, index == 0 ? 1500 : 200)
     }, [index])
 
     const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height + 300} 0 ${dimension.height}  L0 0`
