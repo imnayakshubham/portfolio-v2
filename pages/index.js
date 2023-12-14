@@ -12,55 +12,59 @@ import { Intro } from '../components/Intro/Intro';
 import { SkillsV2 } from '../components/Skills/SkillsV2/SkillsV2';
 import { useZoom } from '../utils/useZoom';
 import { Loading } from '../components/loading';
+import { AnimatePresence } from 'framer-motion';
+import Paragraph from '../components/Testing/Paragraph';
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
   const { zoomLevel } = useZoom()
 
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setMounted(true);
-    }, 2000);
+      setMounted(false);
+    }, 3000);
 
     return () => timeout && clearTimeout(timeout)
   }, []);
   const currentTheme = theme === 'system' ? systemTheme : theme;
 
 
-  if (!mounted) return <Loading />;
   return (
     <>
-      <Suspense fallback={<Loading />}>
-        <Head>
-          <title>Nayak Shubham</title>
-          <meta name="description" content="A Front End Developer with a keen interest in developing highly interactive and intuitive user interfaces keeping in mind its performance, accessibility, responsiveness, reusability of components and overall stability." />
-          <meta name="keywords" content="frontend developer, fullstack developer, engineer, developer, nayak shubham, portfolio website" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/ns.png" />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        </Head>
-        <section className={currentTheme === "dark" ? '' : "#faf9f7"}>
-          <CustomCursor />
-          <section>
-            <NavBar />
-            <AboutMeV2 />
-          </section>
-          <section>
-            <Intro />
-          </section>
-          <section>
-            <SkillsV2 />
-          </section>
-          <section className={currentTheme === "dark" ? '' : "#faf9f7"}>
-            <Projects />
-          </section>
-          <section className='p-6'>
-            <FindMe />
-          </section>
+      <Head>
+        <title>Nayak Shubham</title>
+        <meta name="description" content="A Front End Developer with a keen interest in developing highly interactive and intuitive user interfaces keeping in mind its performance, accessibility, responsiveness, reusability of components and overall stability." />
+        <meta name="keywords" content="frontend developer, fullstack developer, engineer, developer, nayak shubham, portfolio website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/ns.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      </Head>
+
+      <AnimatePresence mode='wait'>
+        {mounted && <Loading />}
+      </AnimatePresence>
+
+      <section className={currentTheme === "dark" ? '' : "#faf9f7"}>
+        <CustomCursor />
+        <section>
+          <NavBar />
+          <AboutMeV2 />
         </section>
-      </Suspense>
+        <section>
+          <Intro />
+        </section>
+        <section>
+          <SkillsV2 />
+        </section>
+        <section className={currentTheme === "dark" ? '' : "#faf9f7"}>
+          <Projects />
+        </section>
+        <section className='p-6'>
+          <FindMe />
+        </section>
+      </section>
     </>
   )
 }

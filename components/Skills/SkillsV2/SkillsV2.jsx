@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Data } from '../useData'
 import { useTheme } from 'next-themes';
+import { useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export const SkillsV2 = () => {
     const { techStack } = Data()
+    const skillscontainer = useRef(null);
+
+    const { scrollYProgress } = useScroll({
+        target: skillscontainer,
+        offset: ["start 0.9", "start 0.25"]
+    })
+
+    const opacity = useTransform(scrollYProgress, [0, 1], [0, 1])
+
+
     const { systemTheme, theme, setTheme } = useTheme();
     const currentTheme = theme === 'system' ? systemTheme : theme;
     return (
-        <div className='w-full h-screen p-5'>
+        <motion.div className='w-full h-screen p-5' ref={skillscontainer} style={{ opacity }}>
             <div className='flex gap-5 flex-col justify-center align-middle'>
                 <div>
                     <p className="text-3vw text-4xl font-bold border-b-4 border-gray-500 inline">
@@ -27,6 +39,6 @@ export const SkillsV2 = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

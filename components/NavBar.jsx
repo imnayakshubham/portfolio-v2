@@ -36,7 +36,7 @@ const NavBar = () => {
                 />
               </h2>
             </Link>
-            <div class="changing-text text-4xl font-bold"></div>
+            <div className="changing-text text-4xl font-bold"></div>
             {/* HAMBURGER BUTTON FOR MOBILE */}
             <div className="md:hidden flex gap-3 items-center">
               <DarkModeToggler />

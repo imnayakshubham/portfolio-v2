@@ -1,82 +1,30 @@
-.banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.introduction {
     height: 100vh;
-    padding: 1rem;
-    background: #fff;
-    animation: gradientAnimation 10s linear;
-    text-transform: uppercase;
-}
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    background-color: #141516;
 
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 0%;
+    svg {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: calc(100% + 300px);
+
+        path {
+            fill: #141516;
+        }
     }
 
-    50% {
-        background-position: 0% 100%;
+    p {
+        display: flex;
+        color: white;
+        font-size: 10rem;
+        align-items: center;
+        position: absolute;
+        z-index: 1000;
     }
-
-    100% {
-        background-position: 0% 0%;
-    }
-}
-
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    50% {
-        background-position: 0% 100%;
-    }
-
-    100% {
-        background-position: 0% 0%;
-    }
-}
-
-.banner__title,
-.banner__sub__title {
-    opacity: 0;
-    animation: fadeIn ease-in 1;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    font-size: 10vw;
-    font-weight: bolder;
-    line-height: 90%;
-}
-
-.banner__sub__title {
-    animation-fill-mode: forwards;
-    font-size: 7.5vw;
-    font-weight: bold;
-    animation-duration: 2s;
-}
-
-.banner__title:hover,
-.banner__sub__title:hover {
-    color: rgb(163, 162, 162);
-}
-
-.banner__title.delayed {
-    animation-delay: 2s;
-}
-
-.banner__sub__title.delayed {
-    animation-delay: 5s;
 }
