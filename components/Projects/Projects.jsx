@@ -1,18 +1,28 @@
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useRef } from 'react'
 import { Data } from '../Skills/useData'
 import { Project } from './Project'
+import { useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export const Projects = () => {
     const { ProjectList } = Data()
+    const projectscontainer = useRef(null);
 
+    const { scrollYProgress } = useScroll({
+        target: projectscontainer,
+        offset: ["start 0.9", "start 0.5"]
+    })
+
+    const opacity = useTransform(scrollYProgress, [0, 1], [0, 1])
     return (
 
-        <section
+        <motion.section
             name="projects"
             className="p-7 snap-start"
+            ref={projectscontainer} style={{ opacity }}
         >
             <div className="max-w-screen-2xl mx-auto flex flex-col justify-center w-full h-full">
                 <div>
@@ -26,6 +36,6 @@ export const Projects = () => {
                     ))}
                 </div>
             </div>
-        </section >
+        </motion.section >
     )
 }

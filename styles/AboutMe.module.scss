@@ -1,0 +1,43 @@
+.logo {
+    display: flex;
+    cursor: pointer;
+    gap: 0.5rem;
+
+    p {
+        margin: 0px;
+        transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+
+    .name {
+        display: flex;
+        gap: 1rem;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+        p {
+            position: relative;
+            transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+            &.snellenberg {
+                background-color: red;
+                display: none;
+            }
+        }
+    }
+
+    &:hover {
+        .name {
+            .codeBy {
+                transform: translateX(100%);
+                display: none;
+            }
+
+            .snellenberg {
+                display: block;
+                transform: translateX(-115%);
+            }
+        }
+    }
+}

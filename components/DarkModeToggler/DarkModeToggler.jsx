@@ -6,6 +6,7 @@ const DarkModeToggler = () => {
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
     const handleToggler = (e) => {
+        document.documentElement.classList.add('transition');
         if (currentTheme === 'dark') {
             setTheme('light')
         } else {
