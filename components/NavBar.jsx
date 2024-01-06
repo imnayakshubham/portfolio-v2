@@ -17,23 +17,14 @@ const NavBar = () => {
   }
 
   return (
-    <nav className={`w-full fixed top-0 left-0 right-0 z-10000 ${isMobileView ? "bg-[#121212] text-white" : ""}`}>
+    <nav className={`w-full fixed top-0 left-0 right-0 z-10000 ${isMobileView ? "bg-[#121212] text-[#fff]" : ""}`}>
       <div className="justify-between mx-auto lg:max-w-8xl md:items-center md:flex md:px-4 backdrop-blur-sm">
         <div>
           <div className="flex items-center justify-between md:block">
             {/* LOGO */}
             <Link href="/">
               <h2 className="text-2xl font-bold">
-                <Typewriter
-                  words={['Hello 👋', "Hola 👋", 'Nayak Shubham']}
-                  loop={1}
-                  cursor
-                  cursorStyle={cursorStyle}
-                  typeSpeed={70}
-                  deleteSpeed={50}
-                  delaySpeed={1000}
-                  onLoopDone={handleDone}
-                />
+                Nayak Shubham
               </h2>
             </Link>
             <div className="changing-text text-4xl font-bold"></div>

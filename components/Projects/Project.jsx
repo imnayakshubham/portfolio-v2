@@ -21,20 +21,24 @@ export const Project = ({ projectData }) => {
                     <div className="flex justify-start gap-5 flex-wrap">
                         {
                             code_link ?
-                                <button className={`bg-transparent hover:bg-indigo-500 transition-colors duration-200 ease-linear font-semibol py-2 px-4 border hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
-                                    <Link href={code_link} target="_blank" rel="noopener noreferrer">Code</Link>
-                                </button> : <>
-                                    <button className={`bg-transparent hover:bg-indigo-500 transition-colors duration-200 ease-linear font-semibol py-2 px-4 border hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
+                                <button className={`hover:border-[#00ffaa] hover:shadow-lg hover:border-1 transition-colors duration-200 ease-linear py-2 px-4 border-2 border-gray-300 hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
+                                    <Link href={code_link} target="_blank" rel="noopener noreferrer">
+                                        Code
+                                    </Link>
+                                </button>
+                                : <>
+                                    <button className={`hover:border-[#00ffaa] hover:shadow-lg hover:border-1 transition-colors duration-200 ease-linear py-2 px-4 border-2 border-gray-300 hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
+
                                         <Link href={frontend_code} target="_blank" rel="noopener noreferrer">Frontend Code</Link>
                                     </button>
-                                    <button className={`bg-transparent hover:bg-indigo-500 transition-colors duration-200 ease-linear font-semibol py-2 px-4 border hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
+                                    <button className={`hover:border-[#00ffaa] hover:shadow-lg hover:border-1 transition-colors duration-200 ease-linear py-2 px-4 border-2 border-gray-300 hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
                                         <Link href={backend_code} target="_blank" rel="noopener noreferrer">Backend Code</Link>
                                     </button>
                                 </>
                         }
                         {
                             demo_link ?
-                                <button className={`bg-transparent hover:bg-indigo-500 transition-colors duration-200 ease-linear font-semibol py-2 px-4 border hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
+                                <button className={`hover:border-[#00ffaa] hover:shadow-lg hover:border-1 transition-colors duration-200 ease-linear py-2 px-4 border-2 border-gray-300 hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
                                     <Link href={demo_link ?? "#"} target="_blank" rel="noopener noreferrer">Demo</Link>
                                 </button>
                                 : null
