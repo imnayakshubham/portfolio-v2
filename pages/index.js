@@ -47,7 +47,7 @@ export default function Home() {
       </AnimatePresence>
 
       <section className={currentTheme === "dark" ? '' : "#faf9f7"}>
-        <CustomCursor />
+        {/* <CustomCursor /> */}
         <section>
           <NavBar />
           <AboutMeV2 />

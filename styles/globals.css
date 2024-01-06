@@ -68,6 +68,7 @@ body {
 
 
 .blink {
+    z-index: 0;
     animation: blink 3s linear infinite;
 }
 
