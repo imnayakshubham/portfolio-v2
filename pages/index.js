@@ -46,25 +46,28 @@ export default function Home() {
         {mounted && <Loading />}
       </AnimatePresence>
 
-      <section className={currentTheme === "dark" ? '' : "#faf9f7"}>
-        {/* <CustomCursor /> */}
-        <section>
-          <NavBar />
-          <AboutMeV2 />
-        </section>
-        <section>
-          <Intro />
-        </section>
-        <section>
-          <SkillsV2 />
-        </section>
+      {!mounted && <AnimatePresence mode='sync'>
         <section className={currentTheme === "dark" ? '' : "#faf9f7"}>
-          <Projects />
+          {/* <CustomCursor /> */}
+          <section>
+            <NavBar />
+            <AboutMeV2 />
+          </section>
+          <section>
+            <Intro />
+          </section>
+          <section>
+            <SkillsV2 />
+          </section>
+          <section className={currentTheme === "dark" ? '' : "#faf9f7"}>
+            <Projects />
+          </section>
+          <section className='p-6'>
+            <FindMe />
+          </section>
         </section>
-        <section className='p-6'>
-          <FindMe />
-        </section>
-      </section>
+      </AnimatePresence>
+      }
     </>
   )
 }
