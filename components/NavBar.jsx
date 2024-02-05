@@ -1,20 +1,12 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import DarkModeToggler from './DarkModeToggler/DarkModeToggler';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { ImCross } from 'react-icons/im';
-import { Typewriter } from 'react-simple-typewriter';
 import { Socials } from './Socials/Socials';
 
 const NavBar = () => {
   const [isMobileView, setIsMobileView] = useState(false);
-  const [cursorStyle, setcursorStyle] = useState("🖋️")
-
-  const handleDone = (value) => {
-    setcursorStyle(" ")
-    return
-  }
 
   return (
     <nav className={`w-full fixed top-0 left-0 right-0 z-10000 ${isMobileView ? "bg-[#121212] text-[#fff]" : ""}`}>

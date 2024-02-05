@@ -143,3 +143,9 @@ body {
     padding: 2rem 2rem;
     /* line-height: 0.5; */
 }
+
+
+.skill__cards>:not(.hovered_card) {
+    filter: blur(5px);
+    transition: all 0.5s ease;
+}
