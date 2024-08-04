@@ -10,13 +10,6 @@ body {
     transition: all 0.25s ease;
 }
 
-.light__shadow {
-    box-shadow: #ccc 0px 1px 0px, #ccc 0px 0px 8px;
-}
-
-.dark__shadow {
-    box-shadow: #ccc 0px 0.5px 0px, #ccc 0px 0px 4px;
-}
 
 .aboutme {
     top: 50px;

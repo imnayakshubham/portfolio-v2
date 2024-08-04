@@ -8,7 +8,7 @@ import { useScroll, useTransform } from 'framer-motion';
 import { motion } from 'framer-motion';
 
 export const Projects = () => {
-    const { ProjectList } = Data()
+    const projectList = Data().projectList
     const projectscontainer = useRef(null);
 
     const { scrollYProgress } = useScroll({
@@ -18,7 +18,6 @@ export const Projects = () => {
 
     const opacity = useTransform(scrollYProgress, [0, 1], [0, 1])
     return (
-
         <motion.section
             name="projects"
             className="p-7 snap-start"
@@ -26,12 +25,12 @@ export const Projects = () => {
         >
             <div className="max-w-screen-2xl mx-auto flex flex-col justify-center w-full h-full">
                 <div>
-                    <p className="text-4xl font-bold border-b-4 border-gray-500 inline">
+                    <p className="text-4xl font-bold border-b-4 border-gray-200 inline">
                         Projects
                     </p>
                 </div>
                 <div className="w-full mt-10 mb-5 flex gap-5 flex-col projects__container">
-                    {ProjectList.map((data, key) => (
+                    {projectList.map((data, key) => (
                         <Project projectData={data} key={key} />
                     ))}
                 </div>
