@@ -82,7 +82,27 @@ export const Data = () => {
     }
   ];
 
-  const ProjectList = [
+  const projectList = [
+    {
+      url: "https://media.istockphoto.com/id/1054899222/photo/anonymous-woman-covering-face-with-paper.webp?b=1&s=170667a&w=0&k=20&c=aoW05MhxXmLkBBUCGFGnGwOXk_z9PHsLHcxLg3V1cvc=&auto=format&fit=crop&w=500&q=60",
+      name: "CorpConv - Confidential Employee Communication Platform",
+      desc: "The platform empowers users to connect, post job opportunities, and engage in one-on-one conversations, all while prioritizing user anonymity.",
+      tech_stack_used: ["React.js", "Tailwind CSS", "Redux Saga", "Node.js", "Express.js", "MongoDB Atlas", "Websocket", "Firebase"],
+      code_link: null,
+      frontend_code: "https://github.com/imnayakshubham/CorpConvFrontend",
+      backend_code: "https://github.com/imnayakshubham/CorpConvBackend",
+      demo_link: "https://corp-conv-frontend.vercel.app/",
+    },
+    {
+      url: "https://plus.unsplash.com/premium_vector-1682311022739-114ad8dcab6c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b25saW5lJTIwc3VydmV5fGVufDB8fDB8fHww",
+      name: "Survey Form Builder",
+      desc: "The Survey Form Builder is a user-friendly tool designed to create and manage surveys effortlessly using Ant Design components. This project aims to streamline the process of survey creation by providing an intuitive interface and robust features.",
+      tech_stack_used: ["React", "Ant Design(UI library)"],
+      code_link: "https://github.com/imnayakshubham/Survey-form-builder",
+      demo_link: "https://survey-form-builder-teal.vercel.app/",
+      backend_code: "https://github.com/imnayakshubham/blog-app-backend",
+      frontend_link: "https://github.com/imnayakshubham/Survey-form-builder",
+    },
     {
       url: "https://images.unsplash.com/photo-1604933762023-7213af7ff7a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       name: "Blog App",
@@ -115,5 +135,5 @@ export const Data = () => {
     },
   ];
 
-  return { techStack, ProjectList }
+  return { techStack, projectList }
 }
