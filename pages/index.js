@@ -15,6 +15,7 @@ import { Loading } from '../components/loading';
 import { AnimatePresence } from 'framer-motion';
 import Paragraph from '../components/Testing/Paragraph';
 import { BlurFade } from '../components/ui/BlurAnimation/BlurFadeAnimation';
+import { Meteors } from '../components/ui/Meteors/Meteors';
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -34,7 +35,9 @@ export default function Home() {
 
       <section className={currentTheme === "dark" ? '' : "#faf9f7"}>
         {/* <CustomCursor /> */}
+
         <section>
+          <Meteors number={100} />
           <BlurFade delay={0.25} inView>
             <NavBar />
           </BlurFade>
