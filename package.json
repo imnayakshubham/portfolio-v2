@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.1.1",
+    "clsx": "^2.1.1",
     "eslint": "8.30.0",
     "eslint-config-next": "13.1.1",
     "framer-motion": "^10.16.16",
@@ -19,7 +20,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-simple-typewriter": "^5.0.1",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "tailwind-merge": "^2.5.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
