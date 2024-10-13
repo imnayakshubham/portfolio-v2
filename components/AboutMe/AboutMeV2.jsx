@@ -9,21 +9,15 @@ export const AboutMeV2 = () => {
         <div className="my-10 w-full" style={{ height: `calc(100vh - 50px)` }}>
             <div className='flex justify-around items-center flex-col gap-4 w-full h-full'>
                 <div className='about__me__links sm:w-11/12 border-4 border-b-0'>
-                    <AnimationEffect position='top'>
-                        <Link rel="noopener noreferrer" target="_blank" href={"https://www.linkedin.com/in/imnayakshubham"}>
-                            <i className="fa-brands fa-linkedin" aria-label="Linkedin" role="img">{" "}linkedin</i>
-                        </Link>
-                    </AnimationEffect>
-                    <AnimationEffect position='top'>
-                        <Link rel="noopener noreferrer" target="_blank" href={"https://github.com/imnayakshubham"}>
-                            <i className="fa-brands fa-github" aria-label="Github" role="img">{" "}github</i>
-                        </Link>
-                    </AnimationEffect>
+                    <Link rel="noopener noreferrer" target="_blank" href={"https://www.linkedin.com/in/imnayakshubham"}>
+                        <i className="fa-brands fa-linkedin" aria-label="Linkedin" role="img">{" "}linkedin</i>
+                    </Link>
+                    <Link rel="noopener noreferrer" target="_blank" href={"https://github.com/imnayakshubham"}>
+                        <i className="fa-brands fa-github" aria-label="Github" role="img">{" "}github</i>
+                    </Link>
                 </div>
                 <span className='name__container'>
-                    <AnimationEffect position='top'>
-                        <p className='first__name'>Shubham</p>
-                    </AnimationEffect>
+                    <p className='first__name'>Shubham</p>
                     <div className='flex justify-center items-end gap-6 w-full'>
                         {/* <div className='flex justify-between gap-4 flex-col'>
                             {["LinkedIN", "Github", "Hashnode"].map((res) => <>{
@@ -33,9 +27,7 @@ export const AboutMeV2 = () => {
                                 </Link>}
                             </>)}
                         </div> */}
-                        <AnimationEffect position='bottom'>
-                            <p className='last__name'>Nayak</p>
-                        </AnimationEffect>
+                        <p className='last__name'>Nayak</p>
                     </div>
                 </span>
                 <div>
@@ -59,19 +51,15 @@ export const AboutMeV2 = () => {
                     </h1>
                 </div>
                 <div className='about__me__links sm:w-11/12 border-4 border-t-0'>
-                    <AnimationEffect position='bottom'>
-                        <div className='custom__border'>
-                            <Link rel="noopener noreferrer" target="_blank" href={"https://imnayakshubham.hashnode.dev/"}>
-                                <i className="fa-brands fa-hashnode" aria-label="Hashnode" role="img">{" "} Blogs</i>
-                            </Link>
-                        </div>
-                    </AnimationEffect>
-
-                    <AnimationEffect position='bottom'>
-                        <Link rel="noopener noreferrer" target="_blank" href={"https://twitter.com/imnayakshubham"}>
-                            <i className="fa-brands fa-square-twitter" aria-label="Twitter" role="img"> {" "} twitter</i>
+                    <div className='custom__border'>
+                        <Link rel="noopener noreferrer" target="_blank" href={"https://imnayakshubham.hashnode.dev/"}>
+                            <i className="fa-brands fa-hashnode" aria-label="Hashnode" role="img">{" "} Blogs</i>
                         </Link>
-                    </AnimationEffect>
+                    </div>
+
+                    <Link rel="noopener noreferrer" target="_blank" href={"https://twitter.com/imnayakshubham"}>
+                        <i className="fa-brands fa-square-twitter" aria-label="Twitter" role="img"> {" "} twitter</i>
+                    </Link>
 
                 </div>
                 <div className='uppercase text-1xl leading-3 blink'><i class="fa-solid fa-arrow-down"></i> {" "}Scroll</div>

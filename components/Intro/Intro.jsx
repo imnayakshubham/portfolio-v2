@@ -3,7 +3,7 @@ import Paragraph from '../Testing/Paragraph'
 
 export const Intro = () => {
     return (
-        <div className='w-full h-full p-5'>
+        <section className='w-full h-full p-5'>
             <div className='flex gap-10 flex-col justify-center'>
                 <div>
                     <p className="text-4xl font-bold border-b-4 border-gray-500 inline">
@@ -32,6 +32,6 @@ export const Intro = () => {
                     </h2>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
