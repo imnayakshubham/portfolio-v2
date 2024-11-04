@@ -1,7 +1,8 @@
 import React from 'react'
-import Paragraph from '../Testing/Paragraph'
 
 export const Intro = () => {
+    const totalExperience = new Date().getFullYear() - 2021
+
     return (
         <section className='w-full h-full p-5'>
             <div className='flex gap-10 flex-col justify-center'>
@@ -11,25 +12,33 @@ export const Intro = () => {
                     </p>
                 </div>
                 <div className='flex align-middle flex-col justify-center h-full gap-12 sm:gap-6'>
-                    <h2 className="text-base uppercase sm:text-xl md:text-2xl lg:text-4xl  transition-all duration-300 ease-in text-justify">
+                    <h6 className="text-base uppercase sm:text-xl md:text-2xl lg:text-4xl transition-all duration-300 ease-in flex gap-2 text-balance">
                         <i className="fa-solid fa-arrow-right blink"></i>
-                        <Paragraph key={1} paragraph="Hi there, I am Nayak Shubham, A software Engineer from India with a passion of sTORY TELLING,I CAN TAKE THE IDEA AND TURN THEM INTO REALITY." />
-                    </h2>
+                        <p>
+                            {`Hi there! I'm Nayak Shubham, a software engineer from India with a passion for storytelling. I love taking ideas and bringing them to life.`}
+                        </p>
+                    </h6>
 
-                    <h2 className="text-base uppercase sm:text-xl md:text-2xl lg:text-4xl  transition-all duration-400 ease-in text-justify">
+                    <h6 className="text-base uppercase sm:text-xl md:text-2xl lg:text-4xl  transition-all duration-300 ease-in flex  gap-2 text-balance">
                         <i className="fa-solid fa-arrow-right blink"></i>
-                        <Paragraph key={2} paragraph="Armed with over 2 years of experience, I excel in creating interactive and user-friendly interfaces. My skills include optimizing performance, ensuring accessibility, responsiveness, and designing reusable components." />
-                    </h2>
+                        <p>
+                            {`Armed with over ${totalExperience} years of experience, I excel in creating interactive and user-friendly interfaces. My skills include optimizing performance, ensuring accessibility, responsiveness, and designing reusable components.`}
+                        </p>
+                    </h6>
 
-                    <h2 className="text-base uppercase sm:text-xl md:text-2xl lg:text-4xl  transition-all duration-500 ease-in text-justify">
+                    <h6 className="text-base uppercase sm:text-xl md:text-2xl lg:text-4xl  transition-all duration-300 ease-in flex  gap-2 text-balance">
                         <i className="fa-solid fa-arrow-right blink"></i>
-                        <Paragraph key={3} paragraph="My expertise extends to UI feasibility and frontend engineering, covering both web and mobile interfaces. I have a knack for turning product challenges into minimalist and compelling user experiences." />
-                    </h2>
+                        <p>
+                            {"I have a strong background in UI feasibility and frontend engineering for both web and mobile platforms. I enjoy transforming product challenges into simple and engaging user experiences."}
+                        </p>
+                    </h6>
 
-                    <h2 className="text-base uppercase sm:text-xl md:text-2xl lg:text-4xl  transition-all duration-600 ease-in text-justify">
+                    <h6 className="text-base uppercase sm:text-xl md:text-2xl lg:text-4xl  transition-all duration-300 ease-in flex  gap-2 text-balance">
                         <i className="fa-solid fa-arrow-right blink"></i>
-                        <Paragraph key={4} paragraph="Yet, my passion extends beyond the realm of technology. I take delight in actively sharing my wealth of knowledge and experiences through insightful blogs and engaging in face-to-face interactions." />
-                    </h2>
+                        <p>
+                            {"Outside of technology, I'm passionate about sharing my knowledge and experiences. I love writing insightful blogs and engaging in meaningful conversations."}
+                        </p>
+                    </h6>
                 </div>
             </div>
         </section>

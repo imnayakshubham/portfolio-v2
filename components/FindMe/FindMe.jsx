@@ -4,7 +4,7 @@ import { HiArrowDown } from 'react-icons/hi';
 
 export const FindMe = () => {
     return (
-        <footer className="text-center">
+        <footer className="text-center p-6">
             <section
                 name="contact"
                 data-scroll-section

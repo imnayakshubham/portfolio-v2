@@ -9,7 +9,7 @@ export const Project = ({ projectData }) => {
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
     return (
-        <div className={`rounded-xl shadow-md overflow-hidden ${currentTheme === "dark" ? "dark__shadow" : "light__shadow"} p-2 project border-gray-200`}>
+        <div className={`rounded-xl overflow-hidden ${currentTheme === "dark" ? "dark__shadow" : "light__shadow"} p-2 project border-gray-200 border`}>
             <div className="md:flex">
                 <div className="md:shrink-0">
                     <Image className="w-full object-cover md:h-full md:w-62 sm:w-30 rounded-md" src={url} alt={name ?? ""} width={1000} height={500} />
@@ -21,23 +21,23 @@ export const Project = ({ projectData }) => {
                     <div className="flex justify-start gap-5 flex-wrap">
                         {
                             code_link ?
-                                <button className={`hover:border-[#00ffaa] hover:shadow-lg hover:border-1 transition-colors duration-200 ease-linear py-2 px-4 border-2 border-gray-200 hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
+                                <button className="border p-2 rounded-md hover:border-[#00ffaa] shimmer__button">
                                     <Link href={code_link} target="_blank" rel="noopener noreferrer">
                                         Code
                                     </Link>
                                 </button>
                                 : <>
-                                    <button className={`hover:border-[#00ffaa] hover:shadow-lg hover:border-1 transition-colors duration-200 ease-linear py-2 px-4 border-2 border-gray-200 hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
+                                    <button className="border p-2 rounded-md hover:border-[#00ffaa] shimmer__button">
                                         <Link href={frontend_code} target="_blank" rel="noopener noreferrer">Frontend Code</Link>
                                     </button>
-                                    <button className={`hover:border-[#00ffaa] hover:shadow-lg hover:border-1 transition-colors duration-200 ease-linear py-2 px-4 border-2 border-gray-200 hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
+                                    <button className="border p-2 rounded-md hover:border-[#00ffaa] shimmer__button">
                                         <Link href={backend_code} target="_blank" rel="noopener noreferrer">Backend Code</Link>
                                     </button>
                                 </>
                         }
                         {
                             demo_link ?
-                                <button className={`hover:border-[#00ffaa] hover:shadow-lg hover:border-1 transition-colors duration-200 ease-linear py-2 px-4 border-2 border-gray-200 hover:border-transparent rounded ${currentTheme === "dark" ? "dark__shadow hover:text-white" : "light__shadow"}`}>
+                                <button className="border p-2 rounded-md hover:border-[#00ffaa] shimmer__button">
                                     <Link href={demo_link ?? "#"} target="_blank" rel="noopener noreferrer">Demo</Link>
                                 </button>
                                 : null
