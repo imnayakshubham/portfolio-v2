@@ -1,21 +1,12 @@
 import Head from 'next/head'
 import NavBar from '../components/NavBar'
-import { Suspense, useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-// import { Skills } from '../components/Skills/Skills';
 import { FindMe } from '../components/FindMe/FindMe';
 import { Projects } from '../components/Projects/Projects';
-// import AboutMe from '../components/AboutMe/AboutMe';
 import { AboutMeV3 } from '../components/AboutMe/AboutMeV3';
-import CustomCursor from '../utils/CustomCursor';
 import { Intro } from '../components/Intro/Intro';
 import { SkillsV2 } from '../components/Skills/SkillsV2/SkillsV2';
-import { useZoom } from '../utils/useZoom';
-import { Loading } from '../components/loading';
-import { AnimatePresence } from 'framer-motion';
-import Paragraph from '../components/Testing/Paragraph';
 import { BlurFade } from '../components/ui/BlurAnimation/BlurFadeAnimation';
-import { Meteors } from '../components/ui/Meteors/Meteors';
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -34,17 +25,11 @@ export default function Home() {
       </Head>
 
       <section className={currentTheme === "dark" ? '' : "#faf9f7"}>
-        {/* <CustomCursor /> */}
-
-        <section>
-          <Meteors number={100} />
-          <BlurFade delay={0.25} inView>
-            <NavBar />
-          </BlurFade>
-          <BlurFade delay={0.25 * 2} inView>
-            <AboutMeV3 />
-          </BlurFade>
-        </section>
+        <div class="pattern__container pointer-events-none absolute left-0 top-0" />
+        <NavBar />
+        <BlurFade delay={0.25 * 2} inView>
+          <AboutMeV3 />
+        </BlurFade>
 
         <BlurFade delay={0.25 * 3} inView>
           <Intro />

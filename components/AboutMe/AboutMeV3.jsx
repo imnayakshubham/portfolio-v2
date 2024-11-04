@@ -1,11 +1,18 @@
 import React from 'react'
 import { WordRotate } from '../ui/WordRotate/WordRotate'
-import { HyperText } from '../ui/HyperText/HyperText'
+import useElementHeight from '../../utils/useElementHeight';
+
 
 export const AboutMeV3 = () => {
+    const navbarHeight = useElementHeight("navbar__container")
     return (
-        <section className=" h-[85vh] sm:h-[91vh] p-5">
+        <section className="p-5"
+            style={{
+                height: `calc(100vh - ${navbarHeight}px)`
+            }}
+        >
             <div className="relative h-full w-full ">
+
                 <div className="absolute bottom-0 w-full">
                     <WordRotate
                         className={"text-[7.5vw] sm:text-[8.25vw] tracking-tighter uppercase leading-0"}

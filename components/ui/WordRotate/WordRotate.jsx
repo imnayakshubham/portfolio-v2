@@ -29,13 +29,13 @@ export function WordRotate({
     return (
         <div className="overflow-hidden">
             <AnimatePresence mode="wait">
-                <motion.h1
+                <motion.span
                     key={words[index]}
-                    className={cn(className)}
+                    className={cn(className, "w-full")}
                     {...framerProps}
                 >
                     {words[index]}
-                </motion.h1>
+                </motion.span>
             </AnimatePresence>
         </div>
     );
