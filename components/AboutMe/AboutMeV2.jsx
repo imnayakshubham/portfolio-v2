@@ -6,7 +6,7 @@ import { AnimationEffect } from '../AnimationEffect/AnimationEffect';
 
 export const AboutMeV2 = () => {
     return (
-        <div className="my-10 w-full" style={{ height: `calc(100vh - 50px)` }}>
+        <div className="my-10 w-full" style={{ height: `calc(100dvh - 50px)` }}>
             <div className='flex justify-around items-center flex-col gap-4 w-full h-full'>
                 <div className='about__me__links sm:w-11/12 border-4 border-b-0'>
                     <Link rel="noopener noreferrer" target="_blank" href={"https://www.linkedin.com/in/imnayakshubham"}>

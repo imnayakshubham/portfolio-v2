@@ -8,7 +8,7 @@ export const AboutMeV3 = () => {
     return (
         <section className="p-5"
             style={{
-                height: `calc(100vh - ${navbarHeight}px)`
+                height: `calc(100dvh - ${navbarHeight}px)`
             }}
         >
             <div className="relative h-full w-full ">
