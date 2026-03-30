@@ -147,7 +147,7 @@ Outside of coding, I write technical blogs and foster thoughtful conversations-b
       href: "https://polymerize.io/",
       badges: [],
       location: "Remote",
-      title: "SDE-2",
+      title: "SDE-3",
       logoUrl: null,
       start: "Sept 2021",
       end: "Present",
@@ -200,53 +200,101 @@ Set up end-to-end testing with Cucumber and Cypress, which boosted code coverage
         },
       ],
       dates: null
-
     },
     {
-      image: "https://images.unsplash.com/photo-1604933762023-7213af7ff7a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      title: "Blog App",
-      description: "Blog App is a web-app to post, update, delete and like blogs.",
-      tags: ["React", "Ant Design(UI library)", "Redux Saga", "Nodejs", "Expressjs", "MongoDB"],
-      frontend_code: "https://github.com/imnayakshubham/blog-app-frontend",
-      backend_code: "https://github.com/imnayakshubham/blog-app-backend",
+      image: "/projects/build-app-with.png",
+      title: "Build-App-With: Production-Grade Project Scaffolder",
+      description: "Architected an intelligent CLI tool to automate the initialization of modern web applications. Streamlines developer workflows by configuring frameworks, testing suites, and deployment scripts, significantly reducing time-to-market for new products.",
+      tags: ["Node.js", "JavaScript", "Fastify", "Jest", "Webpack", "CLI", "Automation"],
       video: null,
-      dates: null,
-      href: "https://blog-app-frontend-one.vercel.app/",
+      href: "https://www.npmjs.com/package/build-app-with",
       links: [
         {
-          title: "Preview",
+          title: "NPM",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://hushwork.vercel.app/",
+          href: "https://www.npmjs.com/package/build-app-with",
         },
         {
-          title: "Frontend Code",
+          title: "Source Code",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/imnayakshubham/CorpConvBackend",
-        },
-        {
-          title: "Backend Code",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/imnayakshubham/CorpConvFrontend",
+          href: "https://github.com/imnayakshubham/build-app-with",
         },
       ],
+      dates: null
     },
     {
-      image: "https://images.unsplash.com/photo-1600783245891-f275a1575d93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bm90ZXMlMjBhcHB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-      title: "Notes App",
-      tags: ["React", "Ant Design(UI library)", "Redux", "Nodejs", "Expressjs", "MongoDB"],
-      description: "Notes App is MERN Stack web app that allow user to Create a note Delete a note and Edit a note.",
-      frontend_code: "",
-      backend_code: "",
-      href: "https://github.com/imnayakshubham/mern-mynotesapp",
+      image: "/projects/accesibilify.png",
+      title: "Accesibilify: Inclusive Web Experience Enhancer",
+      description: "Developed a comprehensive Chrome Extension dedicated to digital accessibility. Empowers users with customizable reading modes, high-contrast themes, and ADHD-friendly interfaces, ensuring web content is universally perusable and inclusive.",
+      tags: ["TypeScript", "React", "Vite", "Tailwind CSS", "Chrome Extension", "A11y"],
       video: null,
-      dates: null,
+      href: "https://accesibilify.vercel.app",
       links: [
         {
-          title: "Code Code",
+          title: "Live",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://accesibilify.vercel.app",
+        },
+        {
+          title: "Source Code",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/imnayakshubham/mern-mynotesapp",
-        }
-      ]
+          href: "https://github.com/imnayakshubham/Accesibilify",
+        },
+      ],
+      dates: null
+    },
+    {
+      image: "/projects/job-scraper.png",
+      title: "Intelligent Job Intelligence & Parsing Engine",
+      description: "Engineered a robust web scraping and data extraction pipeline that transforms unstructured job postings into high-fidelity, structured JSON. Utilizes sophisticated parsing logic to enable seamless data integration for career-tech platforms.",
+      tags: ["Python", "FastAPI", "BeautifulSoup4", "Requests", "Data Extraction", "JSON"],
+      video: null,
+      href: "https://github.com/imnayakshubham/job-post-info-scraper",
+      links: [
+        {
+          title: "Source Code",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/imnayakshubham/job-post-info-scraper",
+        },
+      ],
+      dates: null
+    },
+    {
+      image: "/projects/resume-match.png",
+      title: "AI-Powered Resume Optimization & Matching System",
+      description: "Built a cutting-edge RAG-based application that leverages Llama LLMs to analyze job descriptions and optimize resumes for maximum alignment. Integrates Selenium for real-time data retrieval and ChromaDB for high-dimensional vector search.",
+      tags: ["Python", "LangChain", "LLMs", "Groq", "Selenium", "Streamlit", "ChromaDB"],
+      video: null,
+      href: "https://github.com/imnayakshubham/Resume-Match-using-Selenium-and-llama",
+      links: [
+        {
+          title: "Source Code",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/imnayakshubham/Resume-Match-using-Selenium-and-llama",
+        },
+      ],
+      dates: null
+    },
+    {
+      image: "/projects/quiz-app.png",
+      title: "Timebound: Real-Time Interactive Assessment Platform",
+      description: "Designed and implemented a high-performance web application for conducting synchronized, time-constrained assessments. Focused on low-latency state management and responsive UI/UX to ensure a seamless competitive user experience.",
+      tags: ["React", "JavaScript", "CSS3", "HTML5", "State Management", "Responsive Design"],
+      video: null,
+      href: "https://github.com/imnayakshubham/Timebound-Quiz-App",
+      links: [
+        {
+          title: "Live",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://timebound-quiz-app.vercel.app",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/imnayakshubham/Timebound-Quiz-App",
+        },
+      ],
+      dates: null
     },
   ],
 } as const;

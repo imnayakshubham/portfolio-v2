@@ -30,48 +30,8 @@ const username = "imnayakshubham"
 
 const ProjectsList = () => {
 
-    const [repos, setRepos] = useState<Repo[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string | null>(null);
 
-    useEffect(() => {
-        const fetchRepos = async () => {
-            try {
-                const response = await fetch(`https://api.github.com/users/${username}/repos?sort=stars&direction=desc&per_page=5`);
-                if (!response.ok) {
-                    throw new Error('Failed to fetch repositories');
-                }
-                const data = await response.json();
-                const structuredRepos: Repo[] = data.map((repo: any) => ({
-                    title: repo.name,
-                    description: repo.description || 'No description available',
-                    dates: `Created on ${new Date(repo.created_at).toLocaleDateString()} | Last updated on ${new Date(repo.updated_at).toLocaleDateString()}`,
-                    tags: repo.topics || [],
-                    href: repo.html_url,
-                    image: repo.owner.avatar_url,
-                    video: null,
-                    links: [
-                        {
-                            title: "Code",
-                            icon: <Icons.github className="h-4 w-4" />,
-                            href: repo.html_url,
-                        },
-                    ],
-                }));
-                setRepos(structuredRepos);
-            } catch (err) {
-                if (err instanceof Error) {
-                    setError(err.message);
-                } else {
-                    setError('An unknown error occurred');
-                }
-            } finally {
-                setLoading(false);
-            }
-        };
 
-        fetchRepos();
-    }, []);
 
     return (
         <section id="projects">
@@ -89,7 +49,7 @@ const ProjectsList = () => {
                     </div>
                 </BlurFade>
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-                    {[...DATA.projects, ...repos].map((project, id) => (
+                    {DATA.projects.map((project, id) => (
                         <BlurFade
                             key={project.title}
                             delay={BLUR_FADE_DELAY * 12 + id * 0.05}
